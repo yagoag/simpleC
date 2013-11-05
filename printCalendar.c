@@ -39,18 +39,18 @@ void printCalendar(int numDays, int dayOfWeek) {
     int i, j;
 
     // Prints the header of the calendar
-    printf("Sun\tMon\tTue\tWed\tThu\tFri\tSat\n");
+    printf("\nSun Mon Tue Wed Thu Fri Sat\n");
 
     // Skips the days of the week prior to day one's
     for (i = 0; i < dayOfWeek; i++)
-        printf("\t");
+        printf("    ");
     j = dayOfWeek;
 
     // Prints the days in the calendar
     // i: current day of the month
     // j: current day of the week
     for (i = 1; i <= numDays; i++) {
-        printf("%d\t", i); // Prints the day
+        printf(" %2d ", i); // Prints the day
         j++;               // Increments the current day of the week
         if (j > 6) {
             printf("\n");  // Starts another line
