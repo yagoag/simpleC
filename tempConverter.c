@@ -12,23 +12,23 @@
 int main() {
   float initTemp, // initial temperature
         convTemp; // converted temperature
-  int initType,   // unidade da temperatura a ser convertida
-      convType,   // unidade da temperatura após convertida
+  int initType,   // type of the temperature to be converted
+      convType,   // type of the temperature to convert to
       option;     // menu option
 
 newConv:
   printf("Type of the temperature to be converted, following the codes:\n  1. Degrees Celcius\n  2. Degrees Fahrenheit\n  3. Kelvin\n\n");
   scanf("%d", &initType);
-  system("cls");
+  system("clear || cls");
 
   printf("Type of the temperature to convert to, following the codes:\n  1. Degrees Celcius\n  2. Degrees Fahrenheit\n  3. Kelvin\n\n");
   scanf("%d", &convType);
-  system("cls");
+  system("clear || cls");
 
 convertion:
   printf("Type in the temperature to be converted: ");
   scanf("%f", &initTemp);
-  system("cls");
+  system("clear || cls");
 
   switch (initType) {
          case 1:
